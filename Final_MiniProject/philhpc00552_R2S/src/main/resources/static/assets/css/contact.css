@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+.row .col {
+        margin: 0 !important;
+    }
+
+    .contact-info {
+        font-size: 15px;
+    }
+    .input-group-text{
+        width: 40px;
+    }
+    .input-group{
+        margin-top: 8px;
+    }
+    .title{
+        font-size: 14px;
+        color: #85BA3D;
+    }
+    .docs a {
+        color: #85BA3D;
+    }
+    .docs a:hover {
+        color: rgb(160, 52, 52);
+    }

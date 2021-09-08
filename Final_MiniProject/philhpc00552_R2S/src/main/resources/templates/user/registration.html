@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	th:replace="~{/layout/index :: dynamic(~{::main})}">
+<main >
+	<div class="row mt-2">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<!-- Form thông tin user -->
+				<h6 class="title-1">ĐĂNG KÍ TÀI KHOẢN</h6>
+				<hr>
+				<div class="row mt-3">
+					<label class="col-sm-4 text-right">Username <span
+						class="error">(*)</span>
+					</label>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<input type="text" ng-model="user.username" class="form-control" />
+							<i class="form-text text-muted" ></i>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<label class="col-sm-4 text-right">Họ và Tên:<span
+						class="error">(*)</span></label>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<input type="text"  ng-model="user.fullname" class="form-control" />
+							<i class="form-text text-muted" ></i>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<label class="col-sm-4 text-right">Mật khẩu:<span
+						class="error">(*)</span></label>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<input type="password" ng-model="user.password" class="form-control" />
+							<i class="form-text text-muted" ></i>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<label class="col-sm-4 text-right">Xác nhận mật khẩu:<span
+						class="error">(*)</span>
+					</label>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<input type="password"  ng-model="confirmpass" name="confirmpassword"
+								class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<label class="col-sm-4 text-right">Email: <span
+						class="error">(*)</span>
+					</label>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<input type="email	"  ng-model="user.email" class="form-control" />
+							<i class="form-text text-muted" ></i>
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<div class="col-sm-4 text-right">
+					<button ng-click="user.registration()" class="btn btn-success" disabled>Đăng Kí</button>
+				</div>
+		</div>
+	</div>
+</main>
+</html>

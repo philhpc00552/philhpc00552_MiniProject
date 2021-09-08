@@ -1,0 +1,9 @@
+<div class="list-group shadow-sm p-1 mb-1 rounded">
+    <strong class="btn text-left list-group-item list-group-item-dark"
+        style="background-color: #74C641; color: white;"></i> Chủng
+        Loại</strong>
+    <div>
+        <a th:each="c:${cates}" class="dropdown-item list-group-item" th:href="@{|/product/list/?cid=${c.id}|}">
+            <i class="fa fa-th-large"></i> [[${c.name}]]</a>
+    </div>
+</div>

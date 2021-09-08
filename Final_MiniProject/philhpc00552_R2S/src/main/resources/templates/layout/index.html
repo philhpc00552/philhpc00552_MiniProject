@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" th:fragment="dynamic(main)">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R2S</title>
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- AngularJS -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- font-awesome -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+<!-- LINK CSS -->
+<link rel="stylesheet" th:href="@{/assets/css/index.css}">
+<link rel="stylesheet" th:href="@{/assets/css/dangki.css}">
+<link rel="stylesheet" th:href="@{/assets/css/index.css}">
+<link rel="stylesheet" th:href="@{/assets/css/about.css}">
+<link rel="stylesheet" th:href="@{/assets/css/cart.css}">
+<link rel="stylesheet" th:href="@{/assets/css/contact.css}">
+<link rel="stylesheet" th:href="@{/assets/css/detail.css}">
+<link rel="stylesheet" th:href="@{/assets/css/forgot.css}">
+<link rel="stylesheet" th:href="@{/assets/css/formpay.css}">
+<link rel="stylesheet" th:href="@{/assets/css/items.css}">
+</head>
+<body ng-app="shopping-cart-app" ng-controller="shopping-cart-ctrl">
+	<div class="row" th:replace="/layout/_menu.html"></div>
+	<div class="container">
+		<div class="row">
+			<article class="col-sm-9">
+				<div th:replace="${main}"></div>
+			</article>
+			<aside class="col-sm-3">
+				<div th:replace="/layout/_cart-info.html"></div>
+				<div th:replace="/layout/_category.html"></div>
+			</aside>
+		</div>
+	</div>
+	<footer class="row">
+		<div th:replace="/layout/_footer.html"></div>
+	</footer>
+	<script src="/assets/js/shopping-cart-app.js"></script>
+</body>
+</html>

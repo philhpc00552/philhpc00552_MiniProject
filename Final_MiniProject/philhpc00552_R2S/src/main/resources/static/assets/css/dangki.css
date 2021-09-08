@@ -1,0 +1,42 @@
+.acount_menu li{
+    list-style: none;
+}
+
+.title-1{
+    font-size: 18px;
+    color: #74C641;
+}
+.img-hv>img:hover{
+    width: 110%;
+    height: 110%;
+}
+
+.list-menu ul li{
+    list-style: none;
+}
+.list-menu ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    margin: 0 !important;
+}
+
+.list-menu ul li a:hover {
+    text-decoration: none;
+    color: #74C641;
+    font-size: 16px;
+    margin: 0 !important;
+}
+.error{
+    color: rgb(192, 17, 17);
+}
+.forgot-pass a{
+    color: gray;
+    font-size:15px;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    color: #74C641;
+    font-size: 16px;
+    text-decoration: none;
+}

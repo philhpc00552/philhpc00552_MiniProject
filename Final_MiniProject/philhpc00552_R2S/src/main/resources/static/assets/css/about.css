@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+.row .col {
+        margin: 0 !important;
+    }
+    .doitac{
+        color: #8DC541;
+        text-align: center;
+        border-bottom: 2px solid green;
+    }

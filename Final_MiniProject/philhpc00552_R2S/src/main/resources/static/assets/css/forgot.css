@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+.list-menu ul li{
+    list-style: none;
+}
+.list-menu ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    margin: 0 !important;
+}
+
+.list-menu ul li a:hover {
+    text-decoration: none;
+    color: #74C641;
+    font-size: 16px;
+    margin: 0 !important;
+}
